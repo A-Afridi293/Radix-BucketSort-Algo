@@ -1,0 +1,34 @@
+
++----------------------+----------+------------+----------+--------------+
+|                      |Singly    |Sorted Sing |Unsorted Dub|Sorted Dub  |
++----------------------+----------+------------+----------+--------------+
+| search(L,K)          | O(n)     | O(n)       | O(n)     | O(n)         |
+| insert(L,X)          | O(1)     | O(1)       | O(1)     | O(1)         |
+| Delete(L,X)          | O(n)     | O(1)       | O(1)     | O(1)         |
+| Successor(L,X)       | O(n)     | O(1)       | O(n)     | O(1)         |
+| Predecessor(L,X)     | O(n)     | O(n)       | O(n)     | O(1)         |
+| Min(L)               | O(n)     | O(1)       | O(n)     | O(1)         |
+| Max(L)               | O(n)     | O(n)       | O(n)     | O(1)         |   
++----------------------+----------+------------+----------+--------------+
+
+Search:
+	They are all O(n) because worst case scenario, it will take n times to search something, where n is the number of elements in the linked list.  Also, element may be at the very end of the list for the sorted singly and doubly linked list.
+
+Insert:
+	For unsorted singly and doubly linked list, insertion takes O(n) time because you need to traverse the list to find the location of the insertion, so it takes O(n) time. If you already know the location, then it takes O(1) time.
+
+Delete:
+	Just like insertion, for unsorted singly and doubly linked list, deletion takes O(n) time because you need to traverse the list to find the location of the deletion, so it takes O(n) time. If you already know the location, then it takes O(1) time.
+
+Successor:
+	Similar to insertion and deletion, unsorted singly and doubly linked lists take O(n) time because you have to traverse the list to find the successor element in the list. If you already know the position, then it only takes O(1) time.
+
+Predecessor:
+	Unsorted singly/doubly as well as sorted singly linked list take O(n) time because you have to traverse through the array, and you are also unable to go back in singly linked lists. Sorted doubly linked lists take O(1) time because you know where the predecessor is located, and you can also traverse backwards in a doubly linked list.
+
+Minimum:
+	Unsorted singly/doubly linked lists take O(n) time because you have to traverse and compare through the entire linked list. Sorted singly/doubly linked lists take O(1) time because they already know where the minimum is and can access it immediately.
+
+Maximum:
+	Just like minimum, unsorted singly/doubly linked lists take O(n) time because you have to traverse and compare through the entire linked list. Sorted singly/doubly linked lists take O(1) time because they already know where the maximum is and can access it immediately.
+
